@@ -1,0 +1,5 @@
+CoinFlip is a interesting idea, randomly get CoinFlip using of the value of the previous block, and compare with the Guessing value.
+Even though it looks like randomly, but actually it could be predicated, because it used last block value, so we can use this algorithm to compute current block and 
+set the Guessing value equal that. That is not very hard, because the block time setting 10s, so if we use the console maybe the time is not enough, so we could wright a 
+smart contract.
+
