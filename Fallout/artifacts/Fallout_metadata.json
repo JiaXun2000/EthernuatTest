@@ -1,0 +1,120 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Fal1out",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "allocate",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "allocator",
+						"type": "address"
+					}
+				],
+				"name": "allocatorBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "collectAllocations",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "allocator",
+						"type": "address"
+					}
+				],
+				"name": "sendAllocation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Fallout/Fallout.sol": "Fallout"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Fallback/SafeMath.sol": {
+			"keccak256": "0x46eb1d4c81eed2dd868bc0a1b411e0c7a70cb9ecde086a58aee97e97134e27a4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://87db288de7f3ebb5d38bcb26b123b7e1e14d43b5527cbad22e75337baa7b8f6f",
+				"dweb:/ipfs/QmZ7ALuXLEoexu1uVqrve6kXMqkHzvL3qf7BMtdoLEA2vA"
+			]
+		},
+		"Fallout/Fallout.sol": {
+			"keccak256": "0x4aa483d0436dd5ec3ab05ba125d78d875dead744db93a604976b555d0b6207a1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://50386b58a592771249ff73af3b38176973ab60e1a74a539ea4ef41a9a38a2292",
+				"dweb:/ipfs/QmZbEJStRwznqtDsgRadDBR2NKT2ogbVN2yh4w7x6XfzX4"
+			]
+		}
+	},
+	"version": 1
+}
