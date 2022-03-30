@@ -1,4 +1,5 @@
 # EthernuatTest
-## oneTest
-when you wright a smart contract, you should pay attention to how to use the modefier to decorate the func.
-like: receieve()(fallback) external payable{}, this func will call the any contract,especially use the Method such as transfer()、send()、call()、delegatecall() , if target address is a contract, that will call the fallback, so you should attention that. 
+##
+Welcome to my EthernautTest,and this is my impression when i solve the different Ethernaut level.And i referenced https://xz.aliyun.com/t/7173, it's really told clearly,
+and i hope this will help you.
+
