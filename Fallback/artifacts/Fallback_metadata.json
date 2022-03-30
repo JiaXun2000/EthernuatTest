@@ -1,0 +1,141 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "contribute",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "contributions",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getContribution",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Fallback/attackOne.sol": "Fallback"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Fallback/Ownable.sol": {
+			"keccak256": "0x409e6a6f0218b141f7efdacc569b70efb395d5782dcd599907d845c033ae1df9",
+			"urls": [
+				"bzz-raw://5f40b8130fd8abd7c03012397986a9bd84a9c610a94988d27bb9cf4b2d4ff694",
+				"dweb:/ipfs/QmRqbd9AyCjGrgS2FftUr144wJuJneQNSPXZZU1PN8nFbx"
+			]
+		},
+		"Fallback/SafeMath.sol": {
+			"keccak256": "0x46eb1d4c81eed2dd868bc0a1b411e0c7a70cb9ecde086a58aee97e97134e27a4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://87db288de7f3ebb5d38bcb26b123b7e1e14d43b5527cbad22e75337baa7b8f6f",
+				"dweb:/ipfs/QmZ7ALuXLEoexu1uVqrve6kXMqkHzvL3qf7BMtdoLEA2vA"
+			]
+		},
+		"Fallback/attackOne.sol": {
+			"keccak256": "0xfddce533ec6d75385261167536cf17ffe19a8bcbe304e680b660bcacaeec0326",
+			"urls": [
+				"bzz-raw://58583fdd860d7dee18b6d854b0b6e325cd2db3f8415282a2a16a9acb42bef55f",
+				"dweb:/ipfs/QmSgrQ5VEND2ATA5CLvBYR22Q4nAE6qNEe6kud1u7EaDfC"
+			]
+		}
+	},
+	"version": 1
+}
