@@ -1,0 +1,5 @@
+Maybe this is not a attack? I think it was a idea that we should attention it, especially when we need to call some func, 
+and when we set the parameter or judge some parameter, the caller may change.
+
+msg.sender    tx.origin   
+
