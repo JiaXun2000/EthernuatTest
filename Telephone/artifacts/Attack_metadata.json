@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "attack",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "exploit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Telephone/attackTele.sol": "Attack"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Telephone/Telephone.sol": {
+			"keccak256": "0xc377db63577d6905195996e134c496a56af09ced5590432acaad8f612d876311",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a9d73469ed37bcb4f3c997532bd33547c4515b23eb3765481434308693ae7380",
+				"dweb:/ipfs/Qmeck1C97pM3o2wKJ2aXpaSLBjEwgCB9suujSFv5EfD5uF"
+			]
+		},
+		"Telephone/attackTele.sol": {
+			"keccak256": "0x05c8aa6395d5aa232f125465f80d88ae75a2c0eb28e003f7fdecf8fa4e886059",
+			"urls": [
+				"bzz-raw://4e4f8a730d581ee32da79efa11690f92bd2fad08108269eda3c2e57aa64a10f8",
+				"dweb:/ipfs/QmTmwsxuocwmEshQeatys39mw2zq7Ysy9a76XsnTobRHfi"
+			]
+		}
+	},
+	"version": 1
+}
