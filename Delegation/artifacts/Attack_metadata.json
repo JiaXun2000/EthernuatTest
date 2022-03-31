@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "attackByDelegation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "exploit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Delegation/attack.sol": "Attack"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Delegation/Delegation.sol": {
+			"keccak256": "0x0a42b2a30b8300f14f9d484e0a4266ebaac60ca8e9bc18629e3c7be4404e0496",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9b3ac1e5df3930484eadd829df4b46cc049dc36766f3a111993f3c83a25dbb97",
+				"dweb:/ipfs/QmZyeV3RJXvMRnBQW625LtSjXFHBHpYbz5UErwD5XBG1GT"
+			]
+		},
+		"Delegation/attack.sol": {
+			"keccak256": "0x5c4d78a0b9a9f027c15307c8a8e8ad5effcec7eb72e9b9475ad72b2410d82c5d",
+			"urls": [
+				"bzz-raw://8404de96e67fd3b6803909d2a29c34e0ade97e94037851de83c63a8220e294d5",
+				"dweb:/ipfs/QmWrm5ipnNYYiRFBxscJBfEyp8jDKLnjh4oXcECpqLZneD"
+			]
+		}
+	},
+	"version": 1
+}
