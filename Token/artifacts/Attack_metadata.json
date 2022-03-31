@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "attack",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "exploit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Token/attackToken.sol": "Attack"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Token/Token.sol": {
+			"keccak256": "0x90c1d7effd06f44e8d24fe4144da20f0119dc6c4617f6f57685b5ce3ade356aa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ef4ca6105421dcb0b21938e83bed2eca88704dc50d6721aebab3ce01d7147852",
+				"dweb:/ipfs/QmfMSkeTouerRwXq2efyFZmA6DnDqG2NkgcWyPFSFXRDcM"
+			]
+		},
+		"Token/attackToken.sol": {
+			"keccak256": "0x50801b1e9725ae71736d64fa089d7298181bdf4552d5c583d27a5874909c944d",
+			"urls": [
+				"bzz-raw://f409555842a1b21cd8955e7b7b03940380d3779da79138169f63a5d7a9f25741",
+				"dweb:/ipfs/QmT4U6X9gzqZYBMZ4ecZ4CvP7DcLHbV4PA8Ch2mzMETvWb"
+			]
+		}
+	},
+	"version": 1
+}
