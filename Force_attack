@@ -1,0 +1,17 @@
+Force contract only have a contract, but no anything in it, we can use selfdestruct(address _Force) method to make the Force contract balance to 1.
+
+First create a new Attack contract.We don't initiate the Force contract, we can use Inject Web3, deployed tow smart contracts seperately
+
+
+contract.address  //get the instance address,which is the Force contract address
+
+getbalance(Force address) //0
+
+//after use attack contract 
+
+getbalance(Force address) //1 wei,sucessful attack
+
+
+In solidity, for a contract to be able to receive ether, the fallback function must be marked payable.
+However, there is no way to stop an attacker from sending ether to a contract by self destroying. Hence, it is important not to count on the invariant address(this).balance == 0 for any contract logic.
+
