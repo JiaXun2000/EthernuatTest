@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "attackVault",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "exploit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Vault/attackVault.sol": "Attack"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Vault/Vault.sol": {
+			"keccak256": "0x4eb6450f3090fea3ffe571d6c76498044bb8058034a656fd5044a4da750e7059",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ad08e5904116768834f465c3cdb03e69e8156e93abfe73ef493b7e1843cfdf45",
+				"dweb:/ipfs/QmPCinEgagYGDHXuBrRAABe2ZhTmLxRwAFVmB8k2iXBpvm"
+			]
+		},
+		"Vault/attackVault.sol": {
+			"keccak256": "0x785e2002e4ddef40a383c00ed04a74263dc7d8b3c3db6d10d1753ef9373d22d8",
+			"urls": [
+				"bzz-raw://d0fff8e94ae0afab9cd545780874235e4480688ba435fd9e79fc09d5ae220015",
+				"dweb:/ipfs/QmYfCRmm5QEpnraGw8hJutQdXknxpGzSxFXQgD1XJXNvQT"
+			]
+		}
+	},
+	"version": 1
+}
