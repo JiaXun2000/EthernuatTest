@@ -1,0 +1,20 @@
+A Ponzi scheme is what this contract is for, and we need to stop it. 
+
+Our aims is stop the King contract still running, so we deploy a Attack contract and become a new King, at the same time, we call recieve() of the King contract by 
+constructor() of the Attack contract, and after that, if the malicious node wanna change the king ownership,that will call the recieve() in our Attack contract,
+so if only we write the recieve() code is like revert(), calling the King contract will never be success.  
+
+prize = await contract.prize()
+//get prize object
+web3.utils.toWei(String(prize), 'ether')
+//this shows the prize nums, and it's 1 ether
+
+await contract.owner()
+contract.address
+
+//and start deploy the Attack contract
+
+Most of Ethernaut's levels try to expose (in an oversimpliefied form of course) something that actually happend. A real hack or a real bug.
+
+
+
