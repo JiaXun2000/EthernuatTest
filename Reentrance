@@ -1,0 +1,24 @@
+This is a classic issue, and it is famous fir The DAO in 2015, 
+
+contract.address
+contract.donate.sendTransaction('0x13f6b31A3CA4688bDCE4D83dbd2dD34E1f062d28', {value: 1000000000000000 wei})
+//this is not a neccessarily step ,because in this Ethernaut version , when you instantiate a object, you already store some balance in test contract.
+await getBalance(instance)  //you will see "0.001 ether" in the balance
+start attack.......
+await getBalance(instance)  //balance clear
+
+
+By this level, i found that when you store a little of balance in this contract, But there's a lot of balance in there, if you only attack it with your pitiful balance, 
+or you are not setting number of attacks, you will fail it, cause GAS will run out when you attacking it. So GAS is also a reference indicator when you create a contract.
+
+https://docs.soliditylang.org/en/develop/security-considerations.html#use-the-checks-effects-interactions-pattern
+//this is Security Considerations in solidity
+
+/*
+In order to prevent re-entrancy attacks when moving funds out of your contract, use the Checks-Effects-Interactions pattern being aware that call will only return false without interrupting the execution flow. 
+Solutions such as ReentrancyGuard or PullPayment can also be used.
+transfer and send are no longer recommended solutions as they can potentially break contracts after the Istanbul hard fork Source 1 Source 2.
+Always assume that the receiver of the funds you are sending can be another contract, not just a regular address. 
+Hence, it can execute code in its payable fallback method and re-enter your contract, possibly messing up your state/logic.
+Re-entrancy is a common attack. You should always be prepared for it!
+*/
