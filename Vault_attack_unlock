@@ -6,6 +6,7 @@ we aims to unlock the contract, but i suffered a bug :
 console:
 
 web3.eth.getStorageAt(contract.address,1, function(x,y) {alert(web3.utils.toAscii(y))})
+                                      //this "1" means at the second storage location(start 0).
     //show the passward on the top of the edge
 
 contract.unlock(web3.utils.fromAscii("A very strong secret password :)"))
