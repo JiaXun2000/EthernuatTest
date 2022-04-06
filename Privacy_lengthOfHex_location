@@ -10,4 +10,3 @@ contract.unlock("and the types here is bytes16 , so you should intercept the hex
 Nothing in the ethereum blockchain is private. The keyword private is merely an artificial construct of the Solidity language. 
 Web3's getStorageAt(...) can be used to read anything from storage. 
 It can be tricky to read what you want though, since several optimization rules and techniques are used to compact the storage as much as possible.
-
