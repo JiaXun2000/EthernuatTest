@@ -1,0 +1,13 @@
+This level is a pit, and if you ignorance, maybe you will trapped in it, because the Privacy Contract has a different number of varaiables than others on the web.
+So the number of bits in the momery slots is different.For instance, the parameter in a command on the Internet is 3, but it is actually 5 during the test.
+
+web3.eth.getStorageAt(instance,3,function(x,y){console.info(y);})
+//this is a formal command on the web, but acctually like below:
+web3.eth.getStorageAt(instance,5,function(x,y){console.info(y);})
+
+contract.unlock("and the types here is bytes16 , so you should intercept the hex length")
+
+Nothing in the ethereum blockchain is private. The keyword private is merely an artificial construct of the Solidity language. 
+Web3's getStorageAt(...) can be used to read anything from storage. 
+It can be tricky to read what you want though, since several optimization rules and techniques are used to compact the storage as much as possible.
+
