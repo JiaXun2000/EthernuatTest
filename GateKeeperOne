@@ -1,0 +1,3 @@
+I create a contract which based on 0.8.0 version, but i can not solve gateThree, I guess that is because when i attempt to convert address type to bytes8 type in my code,
+i may use wrong code like inline assembly, and others are fine.So i pass level by old version, of course, i will back to solve this problem with new version.
+
