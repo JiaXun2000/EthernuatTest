@@ -1,3 +1,16 @@
 I create a contract which based on 0.8.0 version, but i can not solve gateThree, I guess that is because when i attempt to convert address type to bytes8 type in my code,
 i may use wrong code like inline assembly, and others are fine.So i pass level by old version, of course, i will back to solve this problem with new version.
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+I solved this problem thoroughly with the help of a friend. 
+The essence of this problem is not complicated, but there is a problem with type conversion. 
+Due to the change of version, some types of conversion have slightly changed, so we need to pay attention to the change of version at all times.
+
+For the same type, a small type can be converted to a large type, and a large type can also be converted to a small type.
+But for different types, the conversion between formats can only be done with the same size, otherwise an error will be reported.
+
+There is an interesting format conversion here. When the address type is converted to uint, the value obtained in the current version is the latter value. 
+When the address type is converted to bytes type, the value obtained in the current version is the previous value.
+
+I will upload my latest code to the corresponding file.
