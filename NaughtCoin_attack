@@ -1,6 +1,8 @@
 The child contract does not rewrite the parent contract, so that the hacker can call the method of the parent contract to attack.
 
 Therefore, we can transfer the locked balance in the contract according to the transferFrom function in ERC20. Before that, we need to approve our attack contract.
+approve(player, _amount) //This is used to authorize the player, actually here both the authorizer and the authorized person are players.
+As the title says, the purpose of this level is to clear the player's balance.
 
 await contract.approve(player, toWei("1000000"))
 
