@@ -1,0 +1,11 @@
+This level is not difficult, but in the latest version there is an automatic check overflow function, so you need to add "uncheck".
+
+Here's a mathematical proof that x ^ y = z can be converted to y = x ^ z.
+
+contract.address
+await contract.entrant()
+//deploy and run the contract
+
+await contract.entrant()
+//pass this level.
+
